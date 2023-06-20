@@ -94,6 +94,7 @@ install -m 644 comps/comps-vm.xml $RPM_BUILD_ROOT/usr/share/qubes/qubes-comps.xm
 
 # contrib repo
 make -C repos install-vm-%{local_dist_name} DESTDIR=$RPM_BUILD_ROOT
+make -C keys install-vm-%{local_dist_name} DESTDIR=$RPM_BUILD_ROOT
 
 %files
 /usr/share/qubes/qubes-comps.xml

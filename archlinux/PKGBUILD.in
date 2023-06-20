@@ -30,7 +30,7 @@ package_qubes-vm-repo() {
 
     # Install keyring (will be activated through the .install file)
     install -dm755 "${pkgdir}/usr/share/pacman/keyrings/"
-    install -m0644 repos/qubes-repo-archlinux-key.asc  "${pkgdir}/usr/share/pacman/keyrings/qubesos-vm.gpg"
-    install -m0644 repos/qubes-repo-archlinux-trusted "${pkgdir}/usr/share/pacman/keyrings/qubesos-vm-trusted"
-    install -m0644 repos/qubes-repo-archlinux-revoked "${pkgdir}/usr/share/pacman/keyrings/qubesos-vm-revoked"
+    install -m0644 keys/qubes-repo-archlinux-key.asc  "${pkgdir}/usr/share/pacman/keyrings/qubesos-vm.gpg"
+    install -m0644 keys/qubes-repo-archlinux-trusted "${pkgdir}/usr/share/pacman/keyrings/qubesos-vm-trusted"
+    install -m0644 keys/qubes-repo-archlinux-revoked "${pkgdir}/usr/share/pacman/keyrings/qubesos-vm-revoked"
 }

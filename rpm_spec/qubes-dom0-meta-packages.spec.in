@@ -43,6 +43,7 @@ install -m 644 comps/comps-dom0.xml $RPM_BUILD_ROOT/usr/share/qubes/qubes-comps.
 
 # contrib repo
 make -C repos install-dom0 DESTDIR=$RPM_BUILD_ROOT
+make -C keys install-dom0 DESTDIR=$RPM_BUILD_ROOT
 
 %files
 /usr/share/qubes/qubes-comps.xml
